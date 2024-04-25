@@ -1,0 +1,18 @@
+package {
+    // http://go/android-license-faq
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "shotgun_shooting_record",
+    resource_dirs: ["res"],
+    sdk_version: "current",
+    target_sdk_version: "30",
+    srcs: [
+        "app/src/main/java/com/example/*.kt",
+    ],
+    product_specific: true,
+
+
+    aaptflags: ["--legacy"],
+}
